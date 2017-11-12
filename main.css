@@ -11,7 +11,17 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     background: url(images/mainbg.png) #DEE5E2;
+}
 
+h3.main-head {
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    color: #2D8967;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .logo {
@@ -60,13 +70,12 @@ a.menulink:hover {
 	padding: 10px 0 10px 0;
 	margin-left: 60px;
 	margin-top: 60px;
-
 	font-family: 'Bree Serif', serif;
 }
 
 .heading h3 {
 	margin-left: 60px;
-	padding-top: 5px;
+	padding: 10px;
 	font-weight: bold;
 }
 
@@ -79,20 +88,152 @@ a.overview-button {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: 15px 0 20px 60px;
+    margin: 15px 0 60px 60px;
 }
 
 a.overview-button:hover {
 	color: #82CBB0;
 }
 
-div.heading {
+div.heading, .why, .register {
 	border-style: solid;
 	border-color: #82CBB0;
-	border-width: 0 0 1px 0;
+	border-width: 0 0 2px 0;
+    padding: 5px;
 }
 
 div.why {
-	margin-top: 1150px;
-	padding-top: 5px;
+	background: #ffffff; 
 }
+
+/*******************************
+ ************Why Tiws*************
+ ******************************/
+div.why {
+    display: inline-block;
+    padding: 10px 0 15px 0;
+}
+
+div.feature {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 26px;
+    padding-top: 10px;
+    border: 1px hidden;
+    width: 30%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+h3.side-head {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center; 
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+ /*******************************
+ ************Tiws*************
+ ******************************/
+
+div.tiws {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; 
+    background-color: white;   
+}
+
+h2.quote {
+    border: 0px solid;
+    background: #ffffff;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    display: inline;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 1;
+}
+
+h2.quote:hover {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+/*******************************
+ ************Register*************
+ ******************************/
+div.register {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+a.register-button {
+    background-color: #2D8967;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+a.register-button:hover {
+    color: #82CBB0;
+}
+
+/*******************************
+ ************Contact*************
+ ******************************/
+div.contact {
+    background-color: #E5E5E5;
+    text-align: center;
+    padding: 5px 0 10px 0;
+}
+
+h5.sec {
+    font-weight: bold;
+}
+
+
+
+
+/*******************************
+ ************Footer*************
+ ******************************/
+ div.foot {
+    background-color: #2D8967;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+ } 
+
+
