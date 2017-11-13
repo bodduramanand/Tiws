@@ -13,6 +13,54 @@ body {
     background: url(images/mainbg.png) #DEE5E2;
 }
 
+/*******************************
+ ************header*************
+ ******************************/
+
+.navbar {
+    overflow: visible;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+.navbar a {
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10 8px 10;
+    text-decoration: none;
+    color: #2D8967;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+div.nav-links {
+    margin-left: 65%;
+}
+
+.nav-link {
+    padding-left: 20px;
+    padding-top: 27px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+div.container {
+    margin-top: 19%;
+}
+
+
+/*******************************
+ ************content*************
+ ******************************/
+
 h3.main-head {
     font-family: 'Acme', sans-serif;
     font-weight: bolder;
@@ -21,47 +69,7 @@ h3.main-head {
     padding: 10px;
     color: #2D8967;
     margin-bottom: 10px;
-    overflow: hidden;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3px;
-    margin-bottom: 4px;
-    background-color: white !important;
-}
-
-ul.menulist {
-    list-style-type: none;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2D8967;
-    text-align: center;
-    width: 100%;
-}
-
-li.menuitem {
-	font-family: 'Ubuntu', sans-serif;
-	margin: 0 auto;
-    padding: 9px 15px 10px 15px;
-    font-weight: normal;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    display: inline-block;
-}
-
-li a.menulink {
-	color: white;
-	text-decoration: none;
-	display: block;
-} 
-
-a.menulink:hover {
-	color: #82CBB0;
+    overflow: visible;
 }
 
 .heading h1 {
@@ -69,7 +77,6 @@ a.menulink:hover {
 	font-weight: 900;
 	padding: 10px 0 10px 0;
 	margin-left: 60px;
-	margin-top: 60px;
 	font-family: 'Bree Serif', serif;
 }
 
@@ -95,23 +102,24 @@ a.overview-button:hover {
 	color: #82CBB0;
 }
 
-div.heading, .why, .register {
+div.heading, .why, .register, .navbar {
 	border-style: solid;
 	border-color: #82CBB0;
 	border-width: 0 0 2px 0;
     padding: 5px;
-}
 
-div.why {
-	background: #ffffff; 
 }
 
 /*******************************
  ************Why Tiws*************
  ******************************/
+
 div.why {
     display: inline-block;
     padding: 10px 0 15px 0;
+    background: #ffffff; 
+    position: relative;
+ 
 }
 
 div.feature {
@@ -122,6 +130,7 @@ div.feature {
     padding-top: 10px;
     border: 1px hidden;
     width: 30%;
+
 }
 
 .img-circle {
@@ -138,19 +147,13 @@ h3.side-head {
     font-family: 'Muli', sans-serif;
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: center; 
+    text-align: center;
 }
 
 p {
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
 }
-
-
-
-
-
-
 
  /*******************************
  ************Tiws*************
@@ -161,7 +164,7 @@ div.tiws {
     padding: 10px;
     text-align: center;
     overflow: hidden; 
-    background-color: white;   
+    background-color: white;  
 }
 
 h2.quote {
@@ -182,10 +185,10 @@ h2.quote:hover {
     text-transform: uppercase;
 }
 
-
 /*******************************
  ************Register*************
  ******************************/
+
 div.register {
     text-decoration: none;
     padding: 10px;
@@ -212,6 +215,7 @@ a.register-button:hover {
 /*******************************
  ************Contact*************
  ******************************/
+
 div.contact {
     background-color: #E5E5E5;
     text-align: center;
@@ -222,12 +226,10 @@ h5.sec {
     font-weight: bold;
 }
 
-
-
-
 /*******************************
  ************Footer*************
  ******************************/
+
  div.foot {
     background-color: #2D8967;
     color: #ffffff;
