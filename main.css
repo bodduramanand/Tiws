@@ -23,7 +23,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+    box-shadow: 0 3px 3px rgba(0,0,0,.4);
     z-index: 99;
 }
 
@@ -46,7 +46,7 @@ div.nav-links {
 
 .nav-link {
     padding-left: 20px;
-    padding-top: 27px;
+    padding-top: 28px;
 }
 
 .nav-link:hover {
@@ -239,4 +239,36 @@ h5.sec {
     padding: 15px;
  } 
 
+/*******************************
+ ********Mobile version*********
+ ******************************/
 
+ @media only screen and (max-width: 420px) and (min-width: 240px) {
+ 
+ body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    background: url(images/mainbg.png) #DEE5E2;
+}
+
+/*******************************
+ ************header*************
+ ******************************/
+
+div.navbar {
+    float: center;
+    width: 100%;
+    position: fixed;
+ }
+
+.logo-link {
+    padding-left: 20%;
+}
+
+/*******************************
+ ************Tiws*************
+ ******************************/
+
+
+
+}
