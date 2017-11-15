@@ -243,32 +243,3 @@ h5.sec {
  ********Mobile version*********
  ******************************/
 
- @media only screen and (max-width: 420px) and (min-width: 240px) {
- 
- body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    background: url(images/mainbg.png) #DEE5E2;
-}
-
-/*******************************
- ************header*************
- ******************************/
-
-div.navbar {
-    float: center;
-    width: 100%;
-    position: fixed;
- }
-
-.logo-link {
-    padding-left: 20%;
-}
-
-/*******************************
- ************Tiws*************
- ******************************/
-
-
-
-}
