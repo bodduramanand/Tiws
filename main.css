@@ -40,6 +40,10 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
+div.mobile-nav {
+    display: none;
+}
+
 div.nav-links {
     margin-left: 65%;
 }
@@ -170,7 +174,6 @@ div.tiws {
 
 h2.quote {
     border: 0px solid;
-    background: #ffffff;
     width: 250px;
     height: 25px;
     text-align: center;
@@ -243,3 +246,215 @@ h5.sec {
  ********Mobile version*********
  ******************************/
 
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+ 
+ 
+
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+ 
+ 
+
+ }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { 
+ 
+ 
+
+ }
+ 
+@media all and (max-width: 480px) { 
+ 
+ body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    background: #ffffff;
+}
+
+/*******************************
+ ************header*************
+ ******************************/
+
+div.navbar {
+    display: none;
+}
+
+div.mobile-nav {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.m-logo-img {
+    display:block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+li {
+    float: left;
+    text-decoration: none;
+    color: white;
+}
+
+.m-nav-link a {
+    background-color: #2D8967;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+
+/*******************************
+ ************content*************
+ ******************************/
+
+div.heading {
+    background: url(images/mainbg.png) #ffffff;
+    padding-top: 30px;
+    top: 0;
+}
+
+h3.main-head {
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    color: #2D8967;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+
+.heading h1 {
+    font-size: 1.425em;
+    float: left;
+    font-weight: bold;
+    padding: 5px 0 10px 0;
+    margin-left: 10px; 
+    font-family: 'Bree Serif', serif;
+}
+
+.heading h3 {
+    margin-left: 6px; 
+}
+
+a.overview-button {
+    display: none;
+}
+
+div.heading, .why, .register, .navbar {
+    border: none;
+    padding: 5px;
+
+}
+
+/*******************************
+ ************Why Tiws*************
+ ******************************/
+
+div.why {
+    display: none;
+  }  
+
+ /*******************************
+ ************Tiws*************
+ ******************************/
+
+div.tiws {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; 
+    background-color: white;  
+}
+
+h2.quote {
+    border: 0px solid;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    display: inline;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+h2.quote:hover {
+    text-decoration: none;
+    text-transform: none;
+}
+
+/*******************************
+ ************Register*************
+ ******************************/
+
+div.register {
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    background-color: #E5E5E5;
+}
+
+
+a.register-button {
+    background-color: #2D8967;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.925em !important;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a.register-button:hover {
+    color: #82CBB0;
+}
+
+/*******************************
+ ************Contact*************
+ ******************************/
+
+div.contact {
+    background-color: #E5E5E5;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-size: 0.925em;
+}
+
+h5.sec {
+    font-weight: bold;
+}
+
+/*******************************
+ ************Footer*************
+ ******************************/
+
+ div.foot {
+    background-color: #2D8967;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.725em;
+ } 
+
+ }
