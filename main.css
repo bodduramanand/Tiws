@@ -270,7 +270,7 @@ h5.sec {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    background: #ffffff;
+    background: url(images/mainbg.png) #ffffff;
 }
 
 /*******************************
@@ -286,10 +286,16 @@ div.mobile-nav {
 
 }
 
+div.logo-image {
+    background-color: white;
+}
+
+
 .m-logo-img {
-    display:block;
+    display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 40%;
+    height: 7em;
     position: relative;
 }
 
@@ -311,7 +317,7 @@ div.mobile-nav {
 }
  
 .m-navigation > li {
-    margin-left: 2.8%;
+    margin-left: 2.75%;
 }
  
 .m-navigation > li:first-child {
@@ -322,7 +328,8 @@ div.mobile-nav {
     padding: .25em;
     text-decoration: none;
     height: 1em;
-    font-weight: bold;  
+    font-weight: bold;
+    font-size: 1.81em;  
     color: #fff;
 }
  
@@ -335,7 +342,7 @@ div.mobile-nav {
 h3.main-head {
     font-family: 'Acme', sans-serif;
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 2.2em;
     text-align: center;
     color: #2D8967;
     margin-bottom: 10px;
@@ -343,9 +350,9 @@ h3.main-head {
 }
 
 .heading h1 {
-    font-size: 1.425em;
+    font-size: 2.250em;
     font-weight: bold;
-    padding: 28px 0 10px 0 !important;
+    padding: 10px 0 10px 0 !important;
     margin-left: 10px;
     margin-top: -70px; 
     font-family: 'Bree Serif', serif;
@@ -353,17 +360,25 @@ h3.main-head {
 }
 
 div.heading {
-    background: url(images/mainbg.png) #ffffff;
-    padding-top: 0;
-    margin: 5px 0 5px 0 !important;
+    padding-top: 5px;
+    margin: -10% 0 5px 0 !important;
+    padding-bottom: 1em;
 }
 
 .heading h3 {
-    margin-left: 6px; 
+    margin-left: 0.5em; 
+    font-size: 1.5em;
 }
 
 a.overview-button {
-    display: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 1em;
+    padding: 1.2em 3em 1.2em 3em; 
+}
+
+.heading h4 {
+    font-size: 1.5em;
 }
 
 div.heading, .why, .register, .navbar {
@@ -377,8 +392,45 @@ div.heading, .why, .register, .navbar {
  ******************************/
 
 div.why {
-    display: none;
+    display: inline-block;
   }  
+
+div.feature p {
+    display: none;
+}  
+
+div.feature {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-left: 1em;
+    padding-top: 10px;
+    border: 1px hidden;
+    width: 30%;
+}
+
+div.feature:first-child {
+    margin-left: 1.5%;
+}
+
+.img-circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+h3.side-head {
+    font-weight: bold;
+    font-size: 1.6em;
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
 
  /*******************************
  ************Tiws*************
@@ -400,7 +452,7 @@ h2.quote {
     display: inline;
     padding: 15px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 2em;
     opacity: 1;
 }
 
@@ -424,16 +476,15 @@ div.register {
 a.register-button {
     background-color: #2D8967;
     color: white;
-    padding: 10px 24px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 0.925em !important;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 5px;
+    display: inline-block;
+    padding: 1em 3em 1em 3em; 
 }
 
-a.register-button:hover {
+a.register-button:hover, overview-button:hover {
     color: #82CBB0;
 }
 
@@ -441,15 +492,16 @@ a.register-button:hover {
  ************Contact*************
  ******************************/
 
-div.contact {
+div.connect {
     background-color: #E5E5E5;
     text-align: center;
     padding: 5px 0 10px 0;
-    font-size: 0.925em;
+    font-size: 1.6em;
 }
 
 h5.sec {
     font-weight: bold;
+    font-size: 1.8;
 }
 
 /*******************************
@@ -462,7 +514,7 @@ h5.sec {
     font-weight: normal;
     text-align: center;
     padding: 8px;
-    font-size: 0.725em;
+    font-size: 1.4em;
  } 
 
  }
