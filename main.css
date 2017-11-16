@@ -124,7 +124,10 @@ div.why {
     padding: 10px 0 15px 0;
     background: #ffffff; 
     position: relative;
- 
+}
+
+ul {
+  list-style-type: none;
 }
 
 div.feature {
@@ -135,7 +138,6 @@ div.feature {
     padding-top: 10px;
     border: 1px hidden;
     width: 30%;
-
 }
 
 .img-circle {
@@ -143,6 +145,7 @@ div.feature {
     display: flex;
     align-items: center;
     margin: 0 auto;
+
 }
 
 
@@ -258,11 +261,215 @@ h5.sec {
 
  }
  
+/*******************************
+ min-width:480px/max-width:768px
+ ******************************/
+
 @media all and (min-width: 480px) and (max-width: 768px) { 
  
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    background: #ffffff;
+}
+
+/*******************************
+ ************header*************
+ ******************************/
+
+div.navbar {
+    display: none;
+}
+
+div.mobile-nav {
+    display: inline-block;
+
+}
+
+.m-logo-img {
+    display:block;
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+}
+
+.m-navigation {
+    background-color: #2D8967;
+    margin: 0;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    line-height: 1;
+    overflow: hidden;
+}
  
+.m-navigation li, .m-navigation a {
+    display: inline-block;  
+}
+ 
+.m-navigation li {
+    list-style-type: none;
+}
+ 
+.m-navigation > li {
+    margin-left: 2.8%;
+}
+ 
+.m-navigation > li:first-child {
+    margin-left: 25% !important;
+}
+ 
+.m-navigation a {
+    padding: .25em;
+    text-decoration: none;
+    height: 1em;
+    font-weight: bold;  
+    color: #fff;
+}
+ 
+/*******************************
+ ************content*************
+ ******************************/
+
+
+
+h3.main-head {
+    font-family: 'Acme', sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    color: #2D8967;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+
+.heading h1 {
+    font-size: 1.425em;
+    font-weight: bold;
+    padding: 28px 0 10px 0 !important;
+    margin-left: 10px;
+    margin-top: -70px; 
+    font-family: 'Bree Serif', serif;
+    padding-top: none;
+}
+
+div.heading {
+    background: url(images/mainbg.png) #ffffff;
+    padding-top: 0;
+    margin: 5px 0 5px 0 !important;
+}
+
+.heading h3 {
+    margin-left: 6px; 
+}
+
+a.overview-button {
+    display: none;
+}
+
+div.heading, .why, .register, .navbar {
+    border: none;
+    padding: none;
+
+}
+
+/*******************************
+ ************Why Tiws*************
+ ******************************/
+
+div.why {
+    display: none;
+  }  
+
+ /*******************************
+ ************Tiws*************
+ ******************************/
+
+div.tiws {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; 
+    background-color: white;  
+}
+
+h2.quote {
+    border: 0px solid;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    display: inline;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    opacity: 1;
+}
+
+h2.quote:hover {
+    text-decoration: none;
+    text-transform: none;
+}
+
+/*******************************
+ ************Register*************
+ ******************************/
+
+div.register {
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    background-color: #E5E5E5;
+}
+
+
+a.register-button {
+    background-color: #2D8967;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.925em !important;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+a.register-button:hover {
+    color: #82CBB0;
+}
+
+/*******************************
+ ************Contact*************
+ ******************************/
+
+div.contact {
+    background-color: #E5E5E5;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    font-size: 0.925em;
+}
+
+h5.sec {
+    font-weight: bold;
+}
+
+/*******************************
+ ************Footer*************
+ ******************************/
+
+ div.foot {
+    background-color: #2D8967;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.725em;
+ } 
 
  }
+
+/*******************************
+ *******max-width: 480px********
+ ******************************/
  
 @media all and (max-width: 480px) { 
  
@@ -282,60 +489,63 @@ div.navbar {
 
 div.mobile-nav {
     display: inline-block;
-}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    text-align: center;
 }
 
 .m-logo-img {
     display:block;
     margin: 0 auto;
     width: 60%;
+    position: relative;
+    padding: 0;
 }
 
-li {
-    float: left;
-    text-decoration: none;
-    color: white;
-}
-
-.m-nav-link a {
+.m-navigation {
     background-color: #2D8967;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-bottom: 5px;
-    margin: 0 auto;
-    display: block;
+    margin: 0;
+    padding: 2.15% 0 2.15% 0;
+    width: 100%;
+    line-height: 1;
+    overflow: hidden;
     text-align: center;
 }
+ 
+.m-navigation li, .m-navigation a {
+    display: inline-block;  
+}
+ 
+.m-navigation li {
+    list-style-type: none;
+}
+ 
+.m-navigation > li {
+    margin-left: 0.8em;
+}
 
-
+.m-navigation li:first-child {
+    margin-left: 0.5em;
+}    
+ 
+.m-navigation a {
+    padding: .25em;
+    text-decoration: none;
+    height: 1em;
+    font-size: 1em;
+    font-weight: bolder;  
+    color: #fff;
+}
+ 
 /*******************************
  ************content*************
  ******************************/
 
-div.heading {
-    background: url(images/mainbg.png) #ffffff;
-    padding-top: 30px;
-    top: 0;
-}
+
 
 h3.main-head {
     font-family: 'Acme', sans-serif;
     font-weight: bolder;
     font-size: 1.2em;
     text-align: center;
-    padding: 10px;
     color: #2D8967;
     margin-bottom: 10px;
     overflow: visible;
@@ -343,11 +553,18 @@ h3.main-head {
 
 .heading h1 {
     font-size: 1.425em;
-    float: left;
     font-weight: bold;
-    padding: 5px 0 10px 0;
-    margin-left: 10px; 
+    padding: 28px 0 10px 0 !important;
+    margin-left: 10px;
+    margin-top: -70px; 
     font-family: 'Bree Serif', serif;
+    padding-top: none;
+}
+
+div.heading {
+    background: url(images/mainbg.png) #ffffff;
+    padding-top: 0;
+    margin: 5px 0 5px 0 !important;
 }
 
 .heading h3 {
@@ -360,7 +577,7 @@ a.overview-button {
 
 div.heading, .why, .register, .navbar {
     border: none;
-    padding: 5px;
+    padding: none;
 
 }
 
